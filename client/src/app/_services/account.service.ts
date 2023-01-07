@@ -33,7 +33,7 @@ export class AccountService {
           this.currentUserSource.next(user);
         }
 
-        //return user; if the subscriber needs access to the response then return it
+        //return user; if the subscriber needs access to the response then return it here in map
       })
     );
   }
