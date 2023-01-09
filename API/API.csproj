@@ -19,6 +19,8 @@
     <None Remove="System.IdentityModel.Tokens.Jwt" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Extensions\" />
+    <None Remove="Errors\" />
+    <None Remove="Middleware\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -27,6 +29,8 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Errors\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.1" />
