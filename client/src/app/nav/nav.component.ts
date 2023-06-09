@@ -26,7 +26,10 @@ export class NavComponent implements OnInit {
 
   login() {
     this.accountService.login(this.model).subscribe({
-      next: () => this.router.navigateByUrl('/members'),
+      next: () => {
+        this.router.navigateByUrl('/members');
+        this.model = {}; // due to two-way binding will reset the form for future logins
+      },
       error: (error) => console.log(error),
     });
   }
